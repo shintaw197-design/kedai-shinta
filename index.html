@@ -1,1 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Camilan & Ikan Paus</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e3d59;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            color: #1e3d59;
+            border-bottom: 3px solid #ff6e40;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 180px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.2rem;
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-price {
+            font-size: 1.1rem;
+            color: #ff6e40;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .btn-checkout {
+            display: block;
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #25D366;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            border-radius: 0 0 10px 10px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn-checkout:hover {
+            background-color: #1da851;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #1e3d59;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Toko Serba Ada & Kuliner</h1>
+        <p>Pesan Produk Favorit Anda Sekarang Juga!</p>
+    </header>
+
+    <div class="container">
+
+        <!-- KATEGORI IKAN PAUS -->
+        <h2 class="category-title">Ikan Paus</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-img">Foto Ikan Paus Biru</div>
+                <div class="card-body">
+                    <h3 class="card-title">Ikan Paus Biru</h3>
+                    <p class="card-price">Rp 150.000.000 / ekor</p>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20Ikan%20Paus%20Biru" class="btn-checkout" target="_blank">Checkout WhatsApp</a>
+            </div>
+
+            <div class="card">
+                <div class="card-img">Foto Ikan Paus Bungkuk</div>
+                <div class="card-body">
+                    <h3 class="card-title">Ikan Paus Bungkuk</h3>
+                    <p class="card-price">Rp 120.000.000 / ekor</p>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20Ikan%20Paus%20Bungkuk" class="btn-checkout" target="_blank">Checkout WhatsApp</a>
+            </div>
+
+            <div class="card">
+                <div class="card-img">Foto Ikan Paus Beluga</div>
+                <div class="card-body">
+                    <h3 class="card-title">Ikan Paus Beluga</h3>
+                    <p class="card-price">Rp 95.000.000 / ekor</p>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20Ikan%20Paus%20Beluga" class="btn-checkout" target="_blank">Checkout WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- KATEGORI JEMBLEM -->
+        <h2 class="category-title">Jemblem Premium</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-img">Foto Jemblem Ori</div>
+                <div class="card-body">
+                    <h3 class="card-title">Jemblem Rasa Original</h3>
+                    <p class="card-price">Rp 15.000 / porsi (isi 5)</p>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20Jemblem%20Original" class="btn-checkout" target="_blank">Checkout WhatsApp</a>
+            </div>
+
+            <div class="card">
+                <div class="card-img">Foto Jemblem Coklat</div>
+                <div class="card-body">
+                    <h3 class="card-title">Jemblem Rasa Coklat</h3>
+                    <p class="card-price">Rp 18.000 / porsi (isi 5)</p>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20Jemblem%20Coklat" class="btn-checkout" target="_blank">Checkout WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- KATEGORI MATCHA -->
+        <h2 class="category-title">Minuman Matcha</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-img">Foto Matcha Latte</div>
+                <div class="card-body">
+                    <h3 class="card-title">Matcha Latte</h3>
+                    <p class="card-price">Rp 22.000 / cup</p>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20Matcha%20Latte" class="btn-checkout" target="_blank">Checkout WhatsApp</a>
+            </div>
+
+            <div class="card">
+                <div class="card-img">Foto Pure Matcha</div>
+                <div class="card-body">
+                    <h3 class="card-title">Pure Matcha</h3>
+                    <p class="card-price">Rp 25.000 / cup</p>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20Pure%20Matcha" class="btn-checkout" target="_blank">Checkout WhatsApp</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Hubungi Kami via WhatsApp: <strong>+62 812-3456-7890</strong></p>
+        <p>&copy; 2026 Toko Online Saya</p>
+    </footer>
+
+</body>
+                                                        </html>
